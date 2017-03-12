@@ -1,6 +1,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <string>
 #include <sstream>
@@ -23,6 +24,7 @@ person::person() {
 	this->numTransactions = 0;
 }
 
+/*SETTERS*/
 void person::setEntryTime(int newEntryTime) {
 	this->entryTime = newEntryTime;
 }
@@ -40,6 +42,39 @@ void person::setNumTransactions(int newNumTransactions) {
 }
 
 
+/*GETTERS*/
+int person::getEntryTime() {
+	return this->entryTime;
+}
 
+string person::getName() {
+	return this->name;
+}
 
+char person::getActivity() {
+	return this->activity;
+}
+
+int person::getNumTransactions() {
+	return this->numTransactions;
+}
+
+/*PARSER*/
+
+void person::parsePerson(string commandLine) {
+	stringstream commandLineStream;
+	commandLineStream.str(commandLine);
+
+	commandLineStream >> this->entryTime;
+	commandLineStream >> this->name;
+	commandLineStream >> this->activity;
+	commandLineStream >> this->numTransactions;
+}
+
+void person::printPerson() {
+	cout << "TEST";
+	//cout << "TIME: " << setw(3) << getEntryTime;
+	//cout << "NAME: " << setw(10) << getName;
+	//cout << "ACTIVITY: " << setw(3) << getActivity;
+	//cout << "TRANSACTIONS: " << setw(3) << getNumTransactions;
 }

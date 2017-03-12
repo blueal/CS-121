@@ -20,13 +20,13 @@ MAIN PROGRAM
 #include "person.h"
 
 using namespace std;
-void parseFile(string fileName);
+linklist *parseFile(string fileName);
 void parseFromInput();
 
 int main() {
 	cout << "Hello, World" << endl;
 
-	bool parseFromFile = false;
+	bool parseFromFile = true;
 
 	if (parseFromFile) {
 
@@ -35,6 +35,8 @@ int main() {
 
 		cout << "What is the name of the file you would like to read? :" << endl;
 		cin >> inputFile;
+
+		parseFile(inputFile);
 
 
 
@@ -86,68 +88,31 @@ list->printList();
 list->printCountList();
 }
 }
-
-void parseFile(string fileName) {
-linklist *list = new linklist;
-
-ifstream fin;
-
-//File Opened
-fin.open(fileName.c_str());
-
-string commandLine;
-string word;
-
-//Grab each line
-getline(fin, commandLine);
-
-//convert the first line from string to a stream
-stringstream commandLineStream;
-commandLineStream.str(commandLine);
-
-//output first line
-cout << commandLine << endl;
-
-while (commandLineStream >> word) {
-//    cout << word << '\n';
-//The first line contians the intial list items,
-//take each item and add it to the list.
-
-list->addNameAtEnd(word);
-}
-cout << "INITIAL LIST: ";
-list->printList();
-list->printCountList();
-
-//Read the rest of the file until EOF
-while (getline(fin, commandLine)) {
-
-cout << commandLine << endl;
-list->processCommand(commandLine);
-list->printList();
-}
-
-cout << "FINAL LIST: ";
-list->printList();
-list->printList();
-list->printCountList();
-
-//Read the rest of the file until EOF
-while (getline(fin, commandLine)) {
-
-cout << commandLine << endl;
-list->processCommand(commandLine);
-list->printList();
-}
-
-cout << "FINAL LIST: ";
-list->printList();
-
-list->printCountList();
-
-fin.close();
-}
 */
+linklist *parseFile(string fileName) {
+	cout << "OPENING FILE: " << fileName << endl;
+	linklist *list = new linklist;
+
+	ifstream fin;
+
+	//File Opened
+	fin.open(fileName.c_str());
+	//cout << "OPENED FILE: " << fileName << endl;
+	string commandLine;
+
+	
+	//Read the rest of the file until EOF
+	while (getline(fin, commandLine)) {
+		//person *person = new person;
+		cout << commandLine << endl;
+		//list->processCommand(commandLine);
+		//list->printList();
+	}
+
+	fin.close();
+
+	return list;
+}
 
 /*END OF FILE*/
 

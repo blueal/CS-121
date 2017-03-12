@@ -33,6 +33,12 @@ public:
 	void person::setActivity(char newActivity);
 	void person::setNumTransactions(int newNumTransactions);
 
-	void printPerson();
+	int person::getEntryTime();
+	string person::getName();
+	char person::getActivity();
+	int person::getNumTransactions();
+
+	void person::printPerson();
+	void person::parsePerson(string commandLine);
 	//ADD OTHER FUNCTIONS HERE;
 };
