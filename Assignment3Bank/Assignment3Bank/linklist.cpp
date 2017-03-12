@@ -44,7 +44,7 @@ cout << "ERROR: '" << name << "' not found in list" << endl;
 }
 */
 
-LINK_LIST_ENTRY_TYPE linklist::removeAtEnd() {
+LINK_LIST_ENTRY_TYPE linklist::removeAtBegin() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
 	LINK_LIST_ENTRY_TYPE returnValue;
@@ -71,7 +71,7 @@ LINK_LIST_ENTRY_TYPE linklist::removeAtEnd() {
 
 }
 
-LINK_LIST_ENTRY_TYPE linklist::removeAtBegin() {
+LINK_LIST_ENTRY_TYPE linklist::removeAtEnd() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
 	LINK_LIST_ENTRY_TYPE returnValue;
@@ -87,7 +87,7 @@ LINK_LIST_ENTRY_TYPE linklist::removeAtBegin() {
 }
 
 
-void linklist::addAtEnd(LINK_LIST_ENTRY_TYPE data) {
+void linklist::addAtBegin(LINK_LIST_ENTRY_TYPE data) {
 
 	LinkListEntry *n = new LinkListEntry;
 
@@ -111,7 +111,7 @@ void linklist::addAtEnd(LINK_LIST_ENTRY_TYPE data) {
 	}
 }
 
-void linklist::addAtBegin(LINK_LIST_ENTRY_TYPE data) {
+void linklist::addAtEnd(LINK_LIST_ENTRY_TYPE data) {
 
 	LinkListEntry *n = new LinkListEntry; //NEW NODE
 
@@ -133,6 +133,26 @@ void linklist::printList() {
 	}
 	cout << endl;
 
+
+}
+
+//Returns data at the beginning of the queue
+LINK_LIST_ENTRY_TYPE linklist::peekAtBegin() {
+
+	LinkListEntry *curr;
+	LinkListEntry *prev;
+	prev = NULL;
+	person dummyPerson;
+
+	for (curr = head; curr != NULL; curr = curr->next) {
+		prev = curr;
+	}
+
+	if (prev != NULL) {
+		return prev->data;
+	}
+
+	return dummyPerson;
 
 }
 

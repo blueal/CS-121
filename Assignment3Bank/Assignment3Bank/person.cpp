@@ -78,3 +78,7 @@ void person::printPerson() {
 	cout << "\tTRANSACTIONS: " << setw(3) << getNumTransactions();
 	cout << endl;
 }
+
+bool person::isExpressEligible() {
+	return (this->getActivity() == 'C' || this->getActivity() == 'D');
+}

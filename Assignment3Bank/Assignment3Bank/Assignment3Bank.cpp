@@ -41,7 +41,7 @@ int main() {
 	
 	myBank->printQueues();
 
-	
+	myBank->runSimulation();
 	
 
 	return 0;

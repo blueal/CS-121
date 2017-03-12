@@ -39,6 +39,7 @@ public:
 	int person::getNumTransactions();
 
 	void person::printPerson();
+	bool isExpressEligible();
 	void person::parsePerson(string commandLine);
 	//ADD OTHER FUNCTIONS HERE;
 };

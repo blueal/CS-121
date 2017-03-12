@@ -21,6 +21,8 @@ public:
 	void bank::printQueues();
 
 	~bank();
+	linklist * shortestLine(person person);
+	linklist * emptyLine(person person);
 	void bank::runSimulation();
 };
 
