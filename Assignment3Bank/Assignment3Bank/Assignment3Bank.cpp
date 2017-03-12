@@ -90,14 +90,17 @@ list->printCountList();
 }
 */
 linklist *parseFile(string fileName) {
-	cout << "OPENING FILE: " << fileName << endl;
+	
 	linklist *list = new linklist;
 
-	ifstream fin;
-
-	//File Opened
-	fin.open(fileName.c_str());
-	//cout << "OPENED FILE: " << fileName << endl;
+	ifstream fin(fileName);
+	if (fin) {
+		cout << "FILE OPENED" << endl;
+	}
+	else {
+		cout << "FILE NOT FOUND" << endl;
+	}
+	
 	string commandLine;
 
 	
