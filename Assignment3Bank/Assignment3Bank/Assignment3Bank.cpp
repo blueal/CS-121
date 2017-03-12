@@ -18,79 +18,31 @@ MAIN PROGRAM
 
 #include "linklist.h"
 #include "person.h"
+#include "bank.h"
 
 using namespace std;
-linklist *parseFile(string fileName);
+
 //void parseFromInput();
 
 int main() {
 	cout << "Hello, World" << endl;
 	bool parseFromFile = true;
 
-	linklist* outTheDoorQueue;
+	//linklist* outTheDoorQueue;
 
-	if (parseFromFile) {
+	string inputFile;
 
-		// string inputFile = "animals1.dat";
-		string inputFile;
+	cout << "What is the name of the file you would like to read? :" << endl;
+	cin >> inputFile;
 
-		cout << "What is the name of the file you would like to read? :" << endl;
-		cin >> inputFile;
-
-		outTheDoorQueue = parseFile(inputFile);
-
-
-
-	}
-	else {
-
-		/*parseFromInput();
-
-		linklist *list = new linklist;
-
-		list->addAtBegin("BEGIN-TEST1");
-		list->printList();
-		list->addAtBegin("BEGIN-TEST2");
-		list->printList();
-		list->addAtEnd("END-TEST3");
-		list->printList();
-
-		cout << "RETURN: " << list->removeAtBegin() << endl;
-		list->printList();
-		cout << "RETURN: " << list->removeAtEnd() << endl;
-		list->printList();
-		cout << "RETURN: " << list->removeAtBegin() << endl;
-		list->printList();
-		cout << "RETURN: " << list->removeAtBegin() << endl;
-		list->printList();
-		*/
-	}
+	bank *bank = new bank;
 	
-	outTheDoorQueue->printList();
+	bank->initializeBank(inputFile);
+	
+	bank->printQueues();
 
-	linklist *expressQueue1;
-	linklist *queue2;
-	linklist *queue3;
-
-	for (int ticker = 1;
-		outTheDoorQueue->countList() > 0 &&
-		expressQueue1->countList() > 0 &&
-		queue2->countList() > 0 &&
-		queue3->countList() > 0;
-		ticker++){
-		
-		//Check if someone is waiting, out the door, let them in
-
-		if (outTheDoorQueue->countList() > 0) {
-			person person = outTheDoorQueue->removeAtBegin();
-
-			if (person.getActivity() == 'C' || person.getActivity() == 'D') {
-				//EXPRESS LANE ELIGIBLE
-
-			}
-		}
-
-	}
+	
+	
 
 	return 0;
 }
@@ -117,7 +69,7 @@ list->printList();
 list->printCountList();
 }
 }
-*/
+
 linklist *parseFile(string fileName) {
 	
 	linklist *list = new linklist;
@@ -148,7 +100,7 @@ linklist *parseFile(string fileName) {
 	//list->printList();
 	return list;
 }
-
+*/
 /*END OF FILE*/
 
 

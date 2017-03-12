@@ -115,9 +115,6 @@ void linklist::addAtBegin(LINK_LIST_ENTRY_TYPE data) {
 
 	LinkListEntry *n = new LinkListEntry; //NEW NODE
 
-	LinkListEntry *curr;
-	LinkListEntry *prev;
-
 	n->data = data;
 
 	n->next = head;
@@ -128,7 +125,7 @@ void linklist::addAtBegin(LINK_LIST_ENTRY_TYPE data) {
 
 void linklist::printList() {
 	LinkListEntry *curr;
-
+	
 	for (curr = head; curr != NULL; curr = curr->next) {
 		//WALK THE LIST
 		curr->data.printPerson();
