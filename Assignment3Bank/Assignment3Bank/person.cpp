@@ -72,9 +72,9 @@ void person::parsePerson(string commandLine) {
 }
 
 void person::printPerson() {
-	cout << "TEST";
-	//cout << "TIME: " << setw(3) << getEntryTime;
-	//cout << "NAME: " << setw(10) << getName;
-	//cout << "ACTIVITY: " << setw(3) << getActivity;
-	//cout << "TRANSACTIONS: " << setw(3) << getNumTransactions;
+	cout << "TIME: " << setw(3) << getEntryTime();
+	cout << "\tNAME: " << setw(10) << getName();
+	cout << "\tACTIVITY: " << setw(3) << getActivity();
+	cout << "\tTRANSACTIONS: " << setw(3) << getNumTransactions();
+	cout << endl;
 }

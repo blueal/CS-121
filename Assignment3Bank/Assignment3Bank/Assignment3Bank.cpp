@@ -21,12 +21,13 @@ MAIN PROGRAM
 
 using namespace std;
 linklist *parseFile(string fileName);
-void parseFromInput();
+//void parseFromInput();
 
 int main() {
 	cout << "Hello, World" << endl;
-
 	bool parseFromFile = true;
+
+	linklist* outTheDoorQueue;
 
 	if (parseFromFile) {
 
@@ -36,14 +37,14 @@ int main() {
 		cout << "What is the name of the file you would like to read? :" << endl;
 		cin >> inputFile;
 
-		parseFile(inputFile);
+		outTheDoorQueue = parseFile(inputFile);
 
 
 
 	}
 	else {
 
-		//parseFromInput();
+		/*parseFromInput();
 
 		linklist *list = new linklist;
 
@@ -62,8 +63,12 @@ int main() {
 		list->printList();
 		cout << "RETURN: " << list->removeAtBegin() << endl;
 		list->printList();
-
+		*/
 	}
+	
+	outTheDoorQueue->printList();
+
+
 
 	return 0;
 }
@@ -106,14 +111,17 @@ linklist *parseFile(string fileName) {
 	
 	//Read the rest of the file until EOF
 	while (getline(fin, commandLine)) {
-		//person *person = new person;
-		cout << commandLine << endl;
-		//list->processCommand(commandLine);
-		//list->printList();
+		person person;
+
+		person.parsePerson(commandLine);
+		//person.printPerson();
+
+		list->addAtEnd(person);
 	}
 
 	fin.close();
 
+	//list->printList();
 	return list;
 }
 

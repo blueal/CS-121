@@ -131,10 +131,7 @@ void linklist::printList() {
 
 	for (curr = head; curr != NULL; curr = curr->next) {
 		//WALK THE LIST
-		cout << curr->data;
-		if (curr->next != NULL) {
-			cout << ", ";
-		}
+		curr->data.printPerson();
 
 	}
 	cout << endl;
@@ -146,6 +143,7 @@ void linklist::printList() {
 LINK_LIST_ENTRY_TYPE linklist::getData(int index) {
 	LinkListEntry *curr;
 	int currIndex = 0;
+	person dummyPerson;
 
 	for (curr = head; curr != NULL; curr = curr->next) {
 		if (currIndex == index) {
@@ -153,7 +151,7 @@ LINK_LIST_ENTRY_TYPE linklist::getData(int index) {
 		}
 		currIndex++;
 	}
-	return NULL;
+	return dummyPerson;
 }
 
 //Get number of entries in linklist

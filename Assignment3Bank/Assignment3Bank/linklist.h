@@ -3,7 +3,8 @@
 
 
 #include <string>
-#define LINK_LIST_ENTRY_TYPE string
+#include "person.h"
+#define LINK_LIST_ENTRY_TYPE person
 using namespace std;
 
 class linklist
