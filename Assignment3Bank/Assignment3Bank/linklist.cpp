@@ -44,10 +44,10 @@ cout << "ERROR: '" << name << "' not found in list" << endl;
 }
 */
 
-string linklist::removeAtEnd() {
+DATATYPE linklist::removeAtEnd() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
-	string returnString = "";
+	DATATYPE returnValue;
 	prev = NULL;
 
 	for (curr = head; curr != NULL; curr = curr->next) {
@@ -60,34 +60,34 @@ string linklist::removeAtEnd() {
 			else {
 				prev->next = NULL;
 			}
-			returnString = curr->name;
+			returnValue = curr->data;
 			delete curr;
 			break;
 		}
 		prev = curr;
 	}
 
-	return returnString;
+	return returnValue;
 
 }
 
-string linklist::removeAtBegin() {
+DATATYPE linklist::removeAtBegin() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
-	string returnString = "";
+	DATATYPE returnValue;
 
 	if (head != NULL) {
 		curr = head;
 		head = head->next;
 
-		returnString = curr->name;
+		returnValue = curr->data;
 		delete curr;
 	}
-	return returnString;
+	return returnValue;
 }
 
 
-void linklist::addNameAtEnd(string name) {
+void linklist::addAtEnd(DATATYPE data) {
 
 	LinkListEntry *n = new LinkListEntry;
 
@@ -101,7 +101,7 @@ void linklist::addNameAtEnd(string name) {
 
 	//  LinkListEntry *n = new linkListEntry;
 
-	n->name = name;
+	n->data = data;
 	n->next = NULL;
 	if (head != NULL) {
 		prev->next = n;
@@ -111,14 +111,14 @@ void linklist::addNameAtEnd(string name) {
 	}
 }
 
-void linklist::addNameAtBegin(string name) {
+void linklist::addAtBegin(DATATYPE data) {
 
 	LinkListEntry *n = new LinkListEntry; //NEW NODE
 
 	LinkListEntry *curr;
 	LinkListEntry *prev;
 
-	n->name = name;
+	n->data = data;
 
 	n->next = head;
 	head = n;
@@ -131,7 +131,7 @@ void linklist::printList() {
 
 	for (curr = head; curr != NULL; curr = curr->next) {
 		//WALK THE LIST
-		cout << curr->name;
+		cout << curr->data;
 		if (curr->next != NULL) {
 			cout << ", ";
 		}

@@ -45,11 +45,11 @@ int main() {
 
 		linklist *list = new linklist;
 
-		list->addNameAtBegin("BEGIN-TEST1");
+		list->addAtBegin("BEGIN-TEST1");
 		list->printList();
-		list->addNameAtBegin("BEGIN-TEST2");
+		list->addAtBegin("BEGIN-TEST2");
 		list->printList();
-		list->addNameAtEnd("END-TEST3");
+		list->addAtEnd("END-TEST3");
 		list->printList();
 
 		cout << "RETURN: " << list->removeAtBegin() << endl;
