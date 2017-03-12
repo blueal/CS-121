@@ -35,11 +35,11 @@ int main() {
 	cout << "What is the name of the file you would like to read? :" << endl;
 	cin >> inputFile;
 
-	bank *bank = new bank;
+	bank *myBank = new bank;
 	
-	bank->initializeBank(inputFile);
+	myBank->initializeBank(inputFile);
 	
-	bank->printQueues();
+	myBank->printQueues();
 
 	
 	
