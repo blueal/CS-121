@@ -44,10 +44,10 @@ cout << "ERROR: '" << name << "' not found in list" << endl;
 }
 */
 
-DATATYPE linklist::removeAtEnd() {
+LINK_LIST_ENTRY_TYPE linklist::removeAtEnd() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
-	DATATYPE returnValue;
+	LINK_LIST_ENTRY_TYPE returnValue;
 	prev = NULL;
 
 	for (curr = head; curr != NULL; curr = curr->next) {
@@ -71,10 +71,10 @@ DATATYPE linklist::removeAtEnd() {
 
 }
 
-DATATYPE linklist::removeAtBegin() {
+LINK_LIST_ENTRY_TYPE linklist::removeAtBegin() {
 	LinkListEntry *prev;
 	LinkListEntry *curr;
-	DATATYPE returnValue;
+	LINK_LIST_ENTRY_TYPE returnValue;
 
 	if (head != NULL) {
 		curr = head;
@@ -87,7 +87,7 @@ DATATYPE linklist::removeAtBegin() {
 }
 
 
-void linklist::addAtEnd(DATATYPE data) {
+void linklist::addAtEnd(LINK_LIST_ENTRY_TYPE data) {
 
 	LinkListEntry *n = new LinkListEntry;
 
@@ -111,7 +111,7 @@ void linklist::addAtEnd(DATATYPE data) {
 	}
 }
 
-void linklist::addAtBegin(DATATYPE data) {
+void linklist::addAtBegin(LINK_LIST_ENTRY_TYPE data) {
 
 	LinkListEntry *n = new LinkListEntry; //NEW NODE
 
@@ -140,5 +140,30 @@ void linklist::printList() {
 	cout << endl;
 
 
+}
+
+//Returns data value at the index of the list
+LINK_LIST_ENTRY_TYPE linklist::getData(int index) {
+	LinkListEntry *curr;
+	int currIndex = 0;
+
+	for (curr = head; curr != NULL; curr = curr->next) {
+		if (currIndex == index) {
+			return curr->data;
+		}
+		currIndex++;
+	}
+	return NULL;
+}
+
+//Get number of entries in linklist
+int linklist::countList() {
+	LinkListEntry *curr;
+	int currIndex = 0;
+
+	for (curr = head; curr != NULL; curr = curr->next) {
+		currIndex++;
+	}
+	return currIndex;
 }
 /*END OF FILE*/

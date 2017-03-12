@@ -22,12 +22,17 @@ private:
 	R = Reconcile Account
 	*/
 	char activity;
-	int transactions;
+	int numTransactions;
 
 
 public:
 
 	person();
+	void setEntryTime(int newEntryTime);
+	void person::setName(string newName);
+	void person::setActivity(char newActivity);
+	void person::setNumTransactions(int newNumTransactions);
+
 	void printPerson();
 	//ADD OTHER FUNCTIONS HERE;
 };

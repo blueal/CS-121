@@ -3,7 +3,7 @@
 
 
 #include <string>
-#define DATATYPE string
+#define LINK_LIST_ENTRY_TYPE string
 using namespace std;
 
 class linklist
@@ -13,7 +13,7 @@ private:
 	{
 
 		LinkListEntry *next;
-		DATATYPE data;
+		LINK_LIST_ENTRY_TYPE data;
 	} LinkListEntry;
 
 	LinkListEntry *head;
@@ -21,11 +21,13 @@ private:
 public:
 
 	linklist();
-	void removeData(DATATYPE data);
-	DATATYPE removeAtEnd();
-	DATATYPE removeAtBegin();
-	void addAtEnd(DATATYPE data);
-	void addAtBegin(DATATYPE data);
+	//void removeData(LINK_LIST_ENTRY_TYPE data);
+	LINK_LIST_ENTRY_TYPE removeAtEnd();
+	LINK_LIST_ENTRY_TYPE removeAtBegin();
+	void addAtEnd(LINK_LIST_ENTRY_TYPE data);
+	void addAtBegin(LINK_LIST_ENTRY_TYPE data);
 	void printList();
+	LINK_LIST_ENTRY_TYPE linklist::getData(int itemInList);
+	int linklist::countList();
 	//ADD OTHER FUNCTIONS HERE;
 };

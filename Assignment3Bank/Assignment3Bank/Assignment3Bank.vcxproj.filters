@@ -41,6 +41,9 @@
     <ClCompile Include="linklist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\Downloads\bank1.dat">
