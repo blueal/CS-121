@@ -68,10 +68,34 @@ int main() {
 	
 	outTheDoorQueue->printList();
 
+	linklist *expressQueue1;
+	linklist *queue2;
+	linklist *queue3;
 
+	for (int ticker = 1;
+		outTheDoorQueue->countList() > 0 &&
+		expressQueue1->countList() > 0 &&
+		queue2->countList() > 0 &&
+		queue3->countList() > 0;
+		ticker++){
+		
+		//Check if someone is waiting, out the door, let them in
+
+		if (outTheDoorQueue->countList() > 0) {
+			person person = outTheDoorQueue->removeAtBegin();
+
+			if (person.getActivity() == 'C' || person.getActivity() == 'D') {
+				//EXPRESS LANE ELIGIBLE
+
+			}
+		}
+
+	}
 
 	return 0;
 }
+
+
 
 /*
 void parseFromInput(){
