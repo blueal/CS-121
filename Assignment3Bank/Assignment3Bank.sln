@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment3Bank", "Assignment3Bank\Assignment3Bank.vcxproj", "{14F31B01-4C5F-47F8-83B5-C343D683F9C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78F50919-84C2-44B1-9853-1F16251D2852}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\Visual Studio 2017\Projects\Assignment3\Assignment3\bank1.dat = ..\..\..\..\Documents\Visual Studio 2017\Projects\Assignment3\Assignment3\bank1.dat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

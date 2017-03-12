@@ -24,6 +24,12 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="linklist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -32,5 +38,13 @@
     <ClCompile Include="Assignment3Bank.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="linklist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\bank1.dat">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
