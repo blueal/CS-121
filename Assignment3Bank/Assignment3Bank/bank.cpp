@@ -38,7 +38,7 @@ void bank::initializeBank(string fileName)
 		outTheDoorQueue->addAtEnd(person);
 	}
 	
-	outTheDoorQueue->printList();
+	//outTheDoorQueue->printList();
 
 	fin.close();
 
@@ -72,7 +72,7 @@ void bank::printQueuesPretty() {
 
 		//Out The Door
 		if (i < outTheDoorQueue->countList()) {
-			cout << setw(15) << outTheDoorQueue->getData(i).getName();
+			cout << setw(15) << "(" + to_string(outTheDoorQueue->getData(i).getEntryTime()) + ") " + outTheDoorQueue->getData(i).getName();
 		}
 		else {
 			cout << setw(15) << "";
@@ -160,7 +160,8 @@ linklist *bank::emptyLine(person person) {
 }
 
 void bank::runSimulation() {
-	for (int ticker = 1;
+	cout << "**********START*OF*SIMULATION**********" << endl;
+	for (int ticker = 0;
 		outTheDoorQueue->countList() > 0 ||
 		expressQueue1->countList() > 0 ||
 		queue2->countList() > 0 ||

@@ -39,7 +39,7 @@ int main() {
 	
 	myBank->initializeBank(inputFile);
 	
-	myBank->printQueues();
+	//myBank->printQueues();
 
 	myBank->runSimulation();
 	
