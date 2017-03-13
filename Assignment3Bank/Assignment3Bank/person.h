@@ -10,6 +10,8 @@ PERSON CLASS.h
 #include <string>
 using namespace std;
 
+#define NOT_HELPED_YET -1
+
 class person
 {
 private:
@@ -23,6 +25,7 @@ private:
 	*/
 	char activity;
 	int numTransactions;
+	int workLeftToDo;
 
 
 public:
@@ -32,11 +35,16 @@ public:
 	void person::setName(string newName);
 	void person::setActivity(char newActivity);
 	void person::setNumTransactions(int newNumTransactions);
+	void setWorkLeftToDo(int newTime);
+	
+	int doWork();
 
 	int person::getEntryTime();
 	string person::getName();
 	char person::getActivity();
 	int person::getNumTransactions();
+	int getWorkLeftToDo();
+
 
 	void person::printPerson();
 	bool isExpressEligible();

@@ -20,6 +20,8 @@ public:
 	void bank::initializeBank(string fileName);
 	void bank::printQueues();
 
+	void printQueuesPretty();
+
 	~bank();
 	linklist * shortestLine(person person);
 	linklist * emptyLine(person person);

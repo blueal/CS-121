@@ -29,6 +29,7 @@ public:
 	void addAtBegin(LINK_LIST_ENTRY_TYPE data);
 	void printList();
 	LINK_LIST_ENTRY_TYPE peekAtBegin();
+	LINK_LIST_ENTRY_TYPE peekAtEnd();
 	LINK_LIST_ENTRY_TYPE linklist::getData(int itemInList);
 	int linklist::countList();
 	//ADD OTHER FUNCTIONS HERE;

@@ -156,6 +156,18 @@ LINK_LIST_ENTRY_TYPE linklist::peekAtBegin() {
 
 }
 
+LINK_LIST_ENTRY_TYPE linklist::peekAtEnd() {
+
+	person dummyPerson;
+
+	if (head != NULL) {
+		return head->data;
+	}
+
+	return dummyPerson;
+
+}
+
 //Returns data value at the index of the list
 LINK_LIST_ENTRY_TYPE linklist::getData(int index) {
 	LinkListEntry *curr;

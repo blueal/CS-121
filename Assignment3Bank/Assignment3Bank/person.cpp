@@ -12,7 +12,7 @@ using namespace std;
 //Constructor
 person::person() {
 	this->entryTime = 0;
-	this->name = "";
+	this->name = "DUMMY_PERSON";
 	/*
 	C = Cash
 	D = Deposit
@@ -22,6 +22,7 @@ person::person() {
 	*/
 	this->activity = '?';
 	this->numTransactions = 0;
+	this->workLeftToDo = NOT_HELPED_YET;
 }
 
 /*SETTERS*/
@@ -41,6 +42,15 @@ void person::setNumTransactions(int newNumTransactions) {
 	this->numTransactions = newNumTransactions;
 }
 
+void person::setWorkLeftToDo(int numTicks) {
+	this->workLeftToDo = numTicks;
+}
+
+//Decrements work by one until 0
+int person::doWork() {
+	this->workLeftToDo--;
+	return this->getWorkLeftToDo();
+}
 
 /*GETTERS*/
 int person::getEntryTime() {
@@ -57,6 +67,10 @@ char person::getActivity() {
 
 int person::getNumTransactions() {
 	return this->numTransactions;
+}
+
+int person::getWorkLeftToDo() {
+	return this->workLeftToDo;
 }
 
 /*PARSER*/
@@ -76,6 +90,7 @@ void person::printPerson() {
 	cout << "\tNAME: " << setw(10) << getName();
 	cout << "\tACTIVITY: " << setw(3) << getActivity();
 	cout << "\tTRANSACTIONS: " << setw(3) << getNumTransactions();
+	cout << "\tWORKLEFTTODO: " << setw(3) << getWorkLeftToDo();
 	cout << endl;
 }
 
