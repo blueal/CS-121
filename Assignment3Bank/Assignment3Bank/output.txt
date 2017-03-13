@@ -1,0 +1,373 @@
+Hello, World
+What is the name of the file you would like to read? :
+FILE OPENED
+**********START*OF*SIMULATION**********
+TICK: 0
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis                                             
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+        (4) Bob                                             
+      (2) Laura                                             
+      (2) Steve                                             
+        (1) Art                                             
+
+TICK: 1
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Art(3, C)                              
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+        (4) Bob                                             
+      (2) Laura                                             
+      (2) Steve                                             
+
+TICK: 2
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Art(2, C)   Laura(11, D)   Steve(15, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+        (4) Bob                                             
+
+TICK: 3
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Art(1, C)   Laura(10, D)   Steve(14, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+        (4) Bob                                             
+
+TICK: 4
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis     Bob(-1, D)    Laura(9, D)   Steve(13, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+
+TICK: 5
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(7, D)    Laura(8, D)   Steve(12, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+
+TICK: 6
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(6, D)    Laura(7, D)   Steve(11, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+
+TICK: 7
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(5, D)    Laura(6, D)   Steve(10, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+
+TICK: 8
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(4, D)    Laura(5, D)    Steve(9, R)
+      (15) Marv                                             
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+      (9) Allan                                             
+
+TICK: 9
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(3, D)    Laura(4, D)   Allan(-1, N)
+      (15) Marv                                  Steve(8, R)
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+
+TICK: 10
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(2, D)    Laura(3, D)   Allan(-1, N)
+      (15) Marv                                  Steve(7, R)
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+
+TICK: 11
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis      Bob(1, D)    Laura(2, D)   Allan(-1, N)
+      (15) Marv                                  Steve(6, R)
+     (14) Susan                                             
+       (13) Bob                                             
+      (12) John                                             
+      (12) Mark                                             
+
+TICK: 12
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis    Mark(-1, D)    John(-1, C)   Allan(-1, N)
+      (15) Marv                   Laura(1, D)    Steve(5, R)
+     (14) Susan                                             
+       (13) Bob                                             
+
+TICK: 13
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis     Mark(3, D)    John(-1, C)     Bob(-1, R)
+      (15) Marv                                 Allan(-1, N)
+     (14) Susan                                  Steve(4, R)
+
+TICK: 14
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+     (15) Elvis   Susan(-1, C)    John(11, C)     Bob(-1, R)
+      (15) Marv     Mark(2, D)                  Allan(-1, N)
+                                                 Steve(3, R)
+
+TICK: 15
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                  Susan(-1, C)   Elvis(-1, R)     Bob(-1, R)
+                    Mark(1, D)    Marv(-1, D)   Allan(-1, N)
+                                  John(10, C)    Steve(2, R)
+
+TICK: 16
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                  Susan(-1, C)   Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(-1, N)
+                                   John(9, C)    Steve(1, R)
+
+TICK: 17
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                   Susan(3, C)   Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(-1, N)
+                                   John(8, C)               
+
+TICK: 18
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                   Susan(2, C)   Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(15, N)
+                                   John(7, C)               
+
+TICK: 19
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                   Susan(1, C)   Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(14, N)
+                                   John(6, C)               
+
+TICK: 20
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(13, N)
+                                   John(5, C)               
+
+TICK: 21
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(12, N)
+                                   John(4, C)               
+
+TICK: 22
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(11, N)
+                                   John(3, C)               
+
+TICK: 23
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)   Allan(10, N)
+                                   John(2, C)               
+
+TICK: 24
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)    Allan(9, N)
+                                   John(1, C)               
+
+TICK: 25
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(-1, D)    Allan(8, N)
+
+TICK: 26
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(15, D)    Allan(7, N)
+
+TICK: 27
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(14, D)    Allan(6, N)
+
+TICK: 28
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(13, D)    Allan(5, N)
+
+TICK: 29
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(12, D)    Allan(4, N)
+
+TICK: 30
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(11, D)    Allan(3, N)
+
+TICK: 31
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                  Marv(10, D)    Allan(2, N)
+
+TICK: 32
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                   Marv(9, D)    Allan(1, N)
+
+TICK: 33
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(-1, R)
+                                   Marv(8, D)               
+
+TICK: 34
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(19, R)
+                                   Marv(7, D)               
+
+TICK: 35
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(18, R)
+                                   Marv(6, D)               
+
+TICK: 36
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(17, R)
+                                   Marv(5, D)               
+
+TICK: 37
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(16, R)
+                                   Marv(4, D)               
+
+TICK: 38
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(15, R)
+                                   Marv(3, D)               
+
+TICK: 39
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(14, R)
+                                   Marv(2, D)               
+
+TICK: 40
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(13, R)
+                                   Marv(1, D)               
+
+TICK: 41
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(-1, R)     Bob(12, R)
+
+TICK: 42
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(19, R)     Bob(11, R)
+
+TICK: 43
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(18, R)     Bob(10, R)
+
+TICK: 44
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(17, R)      Bob(9, R)
+
+TICK: 45
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(16, R)      Bob(8, R)
+
+TICK: 46
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(15, R)      Bob(7, R)
+
+TICK: 47
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(14, R)      Bob(6, R)
+
+TICK: 48
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(13, R)      Bob(5, R)
+
+TICK: 49
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(12, R)      Bob(4, R)
+
+TICK: 50
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(11, R)      Bob(3, R)
+
+TICK: 51
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                 Elvis(10, R)      Bob(2, R)
+
+TICK: 52
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(9, R)      Bob(1, R)
+
+TICK: 53
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(8, R)               
+
+TICK: 54
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(7, R)               
+
+TICK: 55
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(6, R)               
+
+TICK: 56
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(5, R)               
+
+TICK: 57
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(4, R)               
+
+TICK: 58
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(3, R)               
+
+TICK: 59
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(2, R)               
+
+TICK: 60
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+                                  Elvis(1, R)               
+
+TICK: 61
+outTheDoorQueue:        Queue1:        Queue2:        Queue3:
+
+**********END*OF*SIMULATION**********
