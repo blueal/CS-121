@@ -6,18 +6,20 @@
 using namespace std;
 
 /* NAME: ALEX FRIEDBERG
-DATE : 2 / 11 / 17
-ASSIGNMENT : 3
+DATE : 4 / 2 / 17
+ASSIGNMENT : 4
 
-BANK PROGRAM
+TV SHOW PROGRAM
 MAIN PROGRAM
 
 */
 
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <sstream>
+#include "tree.h"
 
 int main()
 {
@@ -31,16 +33,44 @@ int main()
 	cout << "What is the name of the file you would like to read? :" << endl;
 	cin >> inputFile;
 
-	bank *myBank = new bank;
+	cout << inputFile << endl;
 
-	myBank->initializeBank(inputFile);
+	ifstream fin(inputFile);
+	if (fin) {
+		cout << "FILE OPENED" << endl;
+	}
+	else {
+		cout << "FILE NOT FOUND" << endl;
+	}
 
-	//myBank->printQueues();
+	tree *showDataBase = new tree;
+	
+	while (true)
+	{
+		string line;
+		show *newShow = new show; 
 
-	myBank->runSimulation();
+		if (!getline(fin, line)) break;
+		if (line.compare("") == 0) continue;
+			
+		newShow->parseNameAndDates(line);
 
+		if (!getline(fin, line)) break;
+		newShow->parseCategory(line);
 
-	return 0;
+		if (!getline(fin, line)) break;
+		newShow->parseURL(line);
+
+		while (getline(fin, line))
+		{
+			if (line.compare("") == 0) break;
+			newShow->parseActor(line);
+		}
+
+		newShow->printShow();
+	}
+
+	
 	return 0;
 }
 

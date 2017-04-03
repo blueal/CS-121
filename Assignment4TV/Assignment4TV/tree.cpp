@@ -13,20 +13,22 @@ tree .cpp
 
 using namespace std;
 
-void tree::displayInOrder(TreePtr entry){
-	if (treePtr != NULL)
-	{
-		displayInOrder(treePtr->leftPtr);
-
-		cout << treePtr->data << endl;
-
-		displayInOrder(treePtr->rightPtr);
-	}
-}
-
 tree::tree() {
 	root = NULL;
 }
+
+void tree::displayInOrder(TreeEntry *entry){
+	if (entry != NULL)
+	{
+		displayInOrder(entry->left);
+
+		//cout << entry->data << endl;
+
+		displayInOrder(entry->right);
+	}
+}
+
+
 
 void tree::displayAll() {
 	displayInOrder(root);
