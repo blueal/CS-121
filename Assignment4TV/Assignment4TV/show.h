@@ -27,15 +27,18 @@ public:
 	void parseActor(string line);
 
 	void printShow();
+	void printActors();
 
+	bool isSameShow(show * otherShow);
+	bool containsActorName(string actorToFind);
 	void setName(string name);
 	void setStartYear(int startYear);
 	void setEndYear(int endYear);
 	void setCategory(string category);
 
-	string getName(string name);
-	int getStartYear(int startYear);
-	int getEndYear(int endYear);
+	string getName();
+	int getStartYear();
+	int getEndYear();
 	string getCategory(string category);
 
 	//ADD OTHER FUNCTIONS HERE;

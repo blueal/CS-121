@@ -130,7 +130,7 @@ void linklist::printList() {
 		
 		cout << curr->data;
 		if (curr->next != NULL){
-			cout << ", ";
+			cout << endl;
 		}
 
 	}

@@ -1,0 +1,627 @@
+Hello, World
+What is the name of the file you would like to read? :
+tvDB.dat
+FILE OPENED
+Display all shows in the tree (only the titles!)
+The Jack Benny Program
+I Love Lucy
+The Adventures of Ozzie & Harriet
+Topper
+Lassie
+Alfred Hitchcock Presents
+The Phil Silvers Show
+The Honeymooners
+Leave It to Beaver
+Mister Ed
+The Many Loves of Dobie Gillis
+Rawhide
+The Twilight Zone
+Mr. Lucky
+My Three Sons
+The Andy Griffith Show
+The Bullwinkle Show
+The Saint
+The Beverly Hillbillies
+McHale's Navy
+The Lucy Show
+The Fugitive
+Burke's Law
+Gilligan's Island
+Bewitched
+The Man from U.N.C.L.E.
+Gomer Pyle: USMC
+Voyage to the Bottom of the Sea
+I Dream of Jeannie
+Hogan's Heroes
+F Troop
+Gidget
+The Wild Wild West
+Lost in Space
+The Big Valley
+Star Trek
+Batman
+The Flying Nun
+The Invaders
+Mannix
+Ironside
+The Carol Burnett Show
+Mod Squad
+Room 222
+McCloud
+Mary Tyler Moore
+All in the Family
+M*A*S*H
+Banacek
+The Bob Newhart Show
+The Streets of San Francisco
+Kojak
+The Six Million Dollar Man
+Little House on the Prairie 
+Happy Days
+Wonder Woman
+The Jeffersons
+Charlie's Angels
+CHiPs
+Mork & Mindy
+Battlestar Galactica
+Taxi
+WKRP in Cincinnati
+Benson
+The Fall Guy
+Newhart
+Family Ties
+The A-Team
+Scarecrow and Mrs. King
+Night Court
+Riptide
+Murder, She Wrote
+The Cosby Show
+MacGyver
+MacGyver
+Matlock
+Jake and the Fatman
+Star Trek: The Next Generation
+Married with Children
+Quantum Leap
+Seinfeld
+Coach
+The Simpsons
+Northern Exposure
+Evening Shade
+Law & Order
+Herman's Head
+Kung Fu: The Legend Continues
+Walker, Texas Ranger
+Animaniacs
+Star Trek: Deep Space Nine
+The X-Files
+Babylon 5
+ER
+JAG
+Dexter's Laboratory
+3rd Rock from the Sun
+Futurama
+NCIS
+Lost
+American Dad!
+
+Display all actors of a given show in the tree: The Saint, Benson, Dexter’s Laboratory, Matlock, Futurama
+DISPLAYING ACTORS BY SHOW NAME: The Saint
+Justine Lord
+Leslie Crawford
+Ivor Dean
+Roger Moore
+
+DISPLAYING ACTORS BY SHOW NAME: Benson
+Didi Conn
+Ethan Phillips
+Rene Auberjonois
+Missy Gold
+Inga Swenson
+James Noble	
+Robert Guillaume
+
+DISPLAYING ACTORS BY SHOW NAME: Dexter's Laboratory
+Rob Paulsen
+Kathryn Cressida
+Allison Moore
+Tom Kenny
+Frank Welker
+Christine Cavanaugh
+Jeff Bennett
+Kath Soucie
+
+DISPLAYING ACTORS BY SHOW NAME: Matlock
+Kene Holliday
+Clarence Gilyard Jr.
+Julie Sommars
+Nancy Stafford
+Andy Griffith
+
+DISPLAYING ACTORS BY SHOW NAME: Futurama
+Maurice LaMarche
+Lauren Tom
+Phil LaMarr
+Tress MacNeille
+John DiMaggio
+Katey Sagal
+Billy West
+
+
+Display all shows of a given actor : Nancy Cartwright, Marcia Wallace, Bill Daily, Joe Penny, John DiMaggio, Ron Howard.
+DISPLAY ALL SHOWS BY ACTOR NAME: Nancy Cartwright
+The Simpsons, 1989, 2014
+Animated
+http://www.imdb.com/title/tt0096697/
+Russi Taylor
+Marcia Wallace
+Maggie Roswell
+Karl Wiedergott
+Tress MacNeille
+Pamela Hayden
+Hank Azaria	
+Harry Shearer
+Yeardley Smith
+Nancy Cartwright
+Julie Kavner
+Dan Castellaneta
+
+Animaniacs, 1993, 1998
+Animated
+http://www.imdb.com/title/tt0105941/
+Bernadette Peters
+Tom Bodett
+Nancy Cartwright
+Jim Cummings
+Chick Vennera
+John Mariano
+Nathan Ruegger
+Jeff Bennett
+Sherri Stoner
+Maurice LaMarche
+Frank Welker
+Jess Harnell
+Tress MacNeille
+Rob Paulsen
+
+
+DISPLAY ALL SHOWS BY ACTOR NAME: Marcia Wallace
+The Bob Newhart Show, 1972, 1978
+Comedy
+http://www.imdb.com/title/tt0068049/
+John Fiedler
+Florida Friebus
+Jack Riley
+Marcia Wallace
+Bill Daily
+Peter Bonerz
+Suzanne Pleshette
+Bob Newhart
+
+The Simpsons, 1989, 2014
+Animated
+http://www.imdb.com/title/tt0096697/
+Russi Taylor
+Marcia Wallace
+Maggie Roswell
+Karl Wiedergott
+Tress MacNeille
+Pamela Hayden
+Hank Azaria	
+Harry Shearer
+Yeardley Smith
+Nancy Cartwright
+Julie Kavner
+Dan Castellaneta
+
+
+DISPLAY ALL SHOWS BY ACTOR NAME: Bill Daily
+I Dream of Jeannie, 1965, 1970
+Comedy
+http://www.imdb.com/title/tt0058815/
+Hayden Rorke
+Bill Daily
+Larry Hagman
+Barbara Eden
+
+The Bob Newhart Show, 1972, 1978
+Comedy
+http://www.imdb.com/title/tt0068049/
+John Fiedler
+Florida Friebus
+Jack Riley
+Marcia Wallace
+Bill Daily
+Peter Bonerz
+Suzanne Pleshette
+Bob Newhart
+
+
+DISPLAY ALL SHOWS BY ACTOR NAME: Joe Penny
+Jake and the Fatman, 1987, 1992
+Drama
+http://www.imdb.com/title/tt0092381/
+Alan Campbell
+Joe Penny
+William Conrad
+
+Riptide, 1984, 1986
+Action
+http://www.imdb.com/title/tt0086789/
+Thom Bray
+Joe Penny
+Perry King
+
+
+DISPLAY ALL SHOWS BY ACTOR NAME: John DiMaggio
+Futurama, 1999, 2014
+Animated
+http://www.imdb.com/title/tt0149460/
+Maurice LaMarche
+Lauren Tom
+Phil LaMarr
+Tress MacNeille
+John DiMaggio
+Katey Sagal
+Billy West
+
+
+DISPLAY ALL SHOWS BY ACTOR NAME: Ron Howard
+The Andy Griffith Show, 1960, 1968
+Comedy
+http://www.imdb.com/title/tt0053479/
+Aneta Corsaut
+Howard McNear
+George Lindsey
+Don Knotts
+Frances Bavier
+Ron Howard
+Andy Griffith
+
+Happy Days, 1974, 1984
+Comedy
+http://www.imdb.com/title/tt0070992/
+Scott Baio
+Al Molinaro
+Don Most
+Ron Howard
+Anson Williams
+Erin Moran
+Tom Bosley
+Marion Ross
+Henry Winkler
+
+
+
+Display all shows released between 1965 and 1975, 2000 and 2010.
+DISPLAY ALL SHOWS REALEASED BETWEEN: 1965 and 1975.
+The Flying Nun, 1967, 1970
+Comedy
+http://www.imdb.com/title/tt0061252/
+Shelley Morrison
+Alejandro Rey
+Madeleine Sherwood
+Marge Redmond
+Sally Field
+
+Star Trek, 1966, 1969
+Sci-Fi
+http://www.imdb.com/title/tt0060028/
+Majel Barrett
+Walter Koenig
+George Takei
+Eddie Paskey
+James Doohan
+Nichelle Nichols
+DeForest Kelley	
+William Shatner
+Leonard Nimoy
+
+I Dream of Jeannie, 1965, 1970
+Comedy
+http://www.imdb.com/title/tt0058815/
+Hayden Rorke
+Bill Daily
+Larry Hagman
+Barbara Eden
+
+Hogan's Heroes, 1965, 1971
+Comedy
+http://www.imdb.com/title/tt0058812/
+Sigrid Valdis
+Leon Askin
+Ivan Dixon	
+Larry Hovis
+Richard Dawson
+Robert Clary
+John Banner
+Werner Klemperer
+Bob Crane
+
+F Troop, 1965, 1967
+Comedy
+http://www.imdb.com/title/tt0058800/
+Frank DeKova
+James Hampton
+Melody Patterson
+Ken Berry
+Larry Storch
+Forrest Tucker
+
+Gidget, 1965, 1966
+Comedy
+http://www.imdb.com/title/tt0058806/
+Betty Conner
+Pete Duel
+Lynette Winter
+Don Porter
+Sally Field
+
+The Wild Wild West, 1965, 1969
+Action
+http://www.imdb.com/title/tt0058855/
+Dick Cangey
+Whitey Hughes
+Ross Martin
+Robert Conrad
+
+Lost in Space, 1965, 1968
+Sci-Fi
+http://www.imdb.com/title/tt0058824/
+Jonathan Harris
+Angela Cartwright
+Bill Mumy
+Marta Kristen
+Mark Goddard
+June Lockhart
+Guy Williams
+
+The Big Valley, 1965, 1969
+Western
+http://www.imdb.com/title/tt0058791/
+Barbara Stanwyck
+Linda Evans
+Lee Majors
+Peter Breck
+Richard Long
+
+Batman, 1966, 1968
+Action
+http://www.imdb.com/title/tt0059968/
+Madge Blake
+Stafford Repp
+Neil Hamilton
+Alan Napier
+Burt Ward
+Adam West
+
+The Invaders, 1967, 1968
+Sci-Fi
+http://www.imdb.com/title/tt0061265/
+Max Kleven
+Mark Russell
+Kent Smith
+Roy Thinnes
+
+M*A*S*H, 1972, 1983
+Comedy
+http://www.imdb.com/title/tt0068098/
+Larry Linville
+David Ogden Stiers
+Gary Burghoff
+Kellye Nakahara
+Mike Farrell
+Harry Morgan
+William Christopher	
+Jamie Farr
+Loretta Swit
+Alan Alda
+
+McCloud, 1970, 1977
+Drama
+http://www.imdb.com/title/tt0065317/
+Diana Muldaur
+Ken Lynch
+Terry Carter
+J.D. Cannon
+Dennis Weaver
+
+Mannix, 1967, 1975
+Action
+http://www.imdb.com/title/tt0061277/
+Joseph Campanella
+Ward Wood
+Gail Fisher
+Mike Connors
+
+Ironside, 1967, 1975
+Drama
+http://www.imdb.com/title/tt0061266/
+Elizabeth Baur
+Barbara Anderson
+Don Mitchell
+Don Galloway
+Raymond Burr
+
+The Carol Burnett Show, 1967, 1978
+Comedy
+http://www.imdb.com/title/tt0061240/
+Ken Berry
+Steve Lawrence
+Ernie Anderson
+Tim Conway
+Lyle Waggoner
+Harvey Korman
+Vicki Lawrence
+Carol Burnett
+
+Mod Squad, 1968, 1973
+Action
+http://www.imdb.com/title/tt0062589/
+Tige Andrews
+Peggy Lipton
+Clarence Williams III
+Michael Cole
+
+Room 222, 1969, 1974
+Comedy
+http://www.imdb.com/title/tt0063948/
+Karen Valentine
+Michael Constantine
+Denise Nicholas
+Lloyd Haynes
+
+Mary Tyler Moore, 1970, 1977
+Comedy
+http://www.imdb.com/title/tt0065314/
+Cloris Leachman
+Betty White	
+Georgia Engel
+Valerie Harper
+Ted Knight
+Edward Asner
+Gavin MacLeod
+Mary Tyler Moore
+
+All in the Family, 1971, 1979
+Comedy
+http://www.imdb.com/title/tt0066626/
+Sally Struthers	 Sally Struthers
+Rob Reiner
+Jean Stapleton
+Carroll O'Connor
+
+Banacek, 1972, 1974
+Mystery
+http://www.imdb.com/title/tt0068044/
+George Murdock
+Christine Belford
+Murray Matheson
+Ralph Manza
+George Peppard
+
+The Bob Newhart Show, 1972, 1978
+Comedy
+http://www.imdb.com/title/tt0068049/
+John Fiedler
+Florida Friebus
+Jack Riley
+Marcia Wallace
+Bill Daily
+Peter Bonerz
+Suzanne Pleshette
+Bob Newhart
+
+Wonder Woman, 1975, 1979
+Adventure
+http://www.imdb.com/title/tt0074074/
+Beatrice Colen
+Richard Eastham
+Tom Kratochvil
+Lyle Waggoner
+Lynda Carter
+
+The Six Million Dollar Man, 1974, 1978
+Adventure
+http://www.imdb.com/title/tt0071054/
+Lindsay Wagner
+Martin E. Brooks
+Lee Majors
+Richard Anderson
+
+The Streets of San Francisco, 1972, 1977
+Action
+http://www.imdb.com/title/tt0068135/
+Richard Hatch
+Reuben Collins
+Michael Douglas
+Karl Malden
+
+Kojak, 1973, 1978
+Drama
+http://www.imdb.com/title/tt0069599/
+Vince Conti
+Mark Russell
+George Savalas
+Kevin Dobson
+Dan Frazer
+Telly Savalas
+
+Little House on the Prairie , 1974, 1983
+Drama
+http://www.imdb.com/title/tt0071007/
+Melissa Sue Anderson
+Karen Grassle
+Sidney Greenbush
+Lindsay Greenbush
+Michael Landon
+Melissa Gilbert
+
+Happy Days, 1974, 1984
+Comedy
+http://www.imdb.com/title/tt0070992/
+Scott Baio
+Al Molinaro
+Don Most
+Ron Howard
+Anson Williams
+Erin Moran
+Tom Bosley
+Marion Ross
+Henry Winkler
+
+The Jeffersons, 1975, 1985
+Comedy
+http://www.imdb.com/title/tt0072519/
+Paul Benedict
+Franklin Cover
+Roxie Roker
+Marla Gibbs
+Sherman Hemsley
+Isabel Sanford
+
+
+DISPLAY ALL SHOWS REALEASED BETWEEN: 2000 and 2010.
+NCIS, 2003, 2014
+Action
+http://www.imdb.com/title/tt0364845/
+Joe Spano
+Sasha Alexander
+Lauren Holly
+Rocky Carroll
+Brian Dietzen
+Cote de Pablo
+Sean Murray	
+Mark Harmon
+David McCallum
+Pauley Perrette
+Michael Weatherly
+
+American Dad!, 2005, 2014
+Animated
+http://www.imdb.com/title/tt0397306/
+Daisuke Suzuki
+Eddie Kaye Thomas
+Patrick Stewart
+Curtis Armstrong
+Mike Barker
+Rachael MacFarlane
+Scott Grimes
+Dee Bradley Baker
+Wendy Schaal
+Seth MacFarlane
+
+Lost, 2004, 2010
+Adventure
+http://www.imdb.com/title/tt0411008/
+Terry O'Quinn
+Evangeline Lilly
+Yunjin Kim
+Daniel Dae Kim
+Josh Holloway
+Matthew Fox
+Naveen Andrews
+Jorge Garcia
+
+
+
