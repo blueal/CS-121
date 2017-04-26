@@ -1,127 +1,64 @@
-#include "stdafx.h"
-/* Hash.cpp
-*
-*  Hash table implementation from:
-*  Kernighan & Ritchie, The C Programming Language,
-*     Second Edition, Prentice-Hall, 1988.
+/* NAME: ALEX FRIEDBERG
+DATE : 4 / 25 / 17
+ASSIGNMENT : 5
+
+HASH TABLE PROGRAM
+MAIN PROGRAM
+
 */
 
-#include <iostream>
-#include <iomanip>
-#include <cstdlib>
-#include <cstring>
-
+#include "stdafx.h"
 using namespace std;
 
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
 #include "hash.h"
 
-
-const int HASH_TABLE_SIZE = 101;
-static NListPtr hashTable[HASH_TABLE_SIZE];
-
-//  Prototypes
-static char *Strdup(const char *);  //  in cstring, but....
-
-
-
-									/*  Hash
-									*  Generate hash value for string s
-									*/
-
-unsigned Hash(char *s)
+int main()
 {
-	unsigned hashVal;
+	cout << "Hello, World!" << endl;
+	
+	string inputFile;
 
-	for (hashVal = 0; *s != '\0'; s++)
-		hashVal = *s + 31 * hashVal;
+	cout << "What is the name of the file you would like to read? :" << endl;
+	cin >> inputFile;
 
-	return  hashVal % HASH_TABLE_SIZE;
-}
+	cout << inputFile << endl;
 
+	ifstream fin(inputFile);
+	if (fin) {
+		cout << "FILE OPENED: " << inputFile << endl;
+	}
+	else {
+		cout << "FILE NOT FOUND: " << inputFile << endl;
+	}
+	
+	string line;
 
-/*  Lookup
-*  Look for s in hashTable
-*/
-
-NListPtr Lookup(char *s)
-{
-	NListPtr np;
-
-	for (np = hashTable[Hash(s)]; np != NULL; np = np->next)
+	while (getline(fin, line))
 	{
-		if (strcmp(s, np->name) == 0)
-			return np;    //  found
+		if (line.compare("") == 0) continue;
+
+		cout << line << endl;
+		
+		Insert(line);
+		
 	}
 
-	return NULL;          //  not found
-}
+	PrintHashTableBuckets();
+	PrintHashTableBucketsMinMax();
+	LookupPrintCount("aardvark");
+	LookupPrintCount("bucolic");
+	LookupPrintCount("catastrophic");
+	LookupPrintCount("humdrum");
+	LookupPrintCount("euphoria");
+	LookupPrintCount("ferocious");
+	LookupPrintCount("precarious");
+	LookupPrintCount("talkative");
+	LookupPrintCount("stupendous");
+	LookupPrintCount("bias");
 
-/*  Insert
-*  Put (name, defn) in hash table
-*/
-
-NListPtr Insert(char *name, char *defn)
-{
-	unsigned hashVal;
-	NListPtr np;
-
-	if ((np = Lookup(name)) == NULL)  // not found
-	{
-		np = (NListPtr)malloc(sizeof(*np));
-		if (np == NULL || (np->name = Strdup(name)) == NULL)
-			return NULL;
-		hashVal = Hash(name);
-		np->next = hashTable[hashVal];
-		hashTable[hashVal] = np;
-	}
-	else
-	{      //  remove previous definition
-		free((void *)np->defn);
-	}
-
-	if ((np->defn = Strdup(defn)) == NULL)
-		return NULL;
-
-	return np;
-}
-
-
-/*  PrintHashTable
-*  Print the hash table contents
-*/
-
-void PrintHashTable()
-{
-	NListPtr np;
-
-	cout << "Hash table contents:" << endl;
-	cout << "--------------------\n" << endl;
-
-	for (int i = 0; i < HASH_TABLE_SIZE; i++)
-	{
-		np = hashTable[i];
-		while (np != NULL)
-		{
-			cout << setw(3) << i << ":    ";
-			cout << np->name << ", " << np->defn;
-			cout << endl;
-			np = np->next;
-		}
-	}
-}
-
-
-/*  Strdup
-*  Make a duplicate copy of s
-*/
-
-static char *Strdup(const char *s)
-{
-	char *p;
-
-	p = (char *)malloc(strlen(s) + 1);  /*  +1 for '\0'  */
-	if (p != NULL)
-		strcpy(p, s);
-
-	return p;
+	return 0;
 }

@@ -16,6 +16,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="dict1.txt" />
+    <Text Include="dict2.txt" />
+    <Text Include="dict4.txt" />
+    <Text Include="dict8.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -33,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Assignment5HashTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

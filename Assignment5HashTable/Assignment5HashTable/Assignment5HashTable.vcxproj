@@ -135,6 +135,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="dict1.txt" />
+    <Text Include="dict2.txt" />
+    <Text Include="dict4.txt" />
+    <Text Include="dict8.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Assignment5HashTable.cpp" />
+    <ClCompile Include="hash.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
