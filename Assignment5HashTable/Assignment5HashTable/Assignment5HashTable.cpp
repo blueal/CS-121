@@ -41,7 +41,7 @@ int main()
 	{
 		if (line.compare("") == 0) continue;
 
-		cout << line << endl;
+		//cout << line << endl;
 		
 		Insert(line);
 		

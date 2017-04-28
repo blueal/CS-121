@@ -1,0 +1,49 @@
+﻿Hello, World!
+What is the name of the file you would like to read? :
+dict1.txt
+FILE OPENED: dict1.txt
+Hash table bucket amounts:
+--------------------------
+
+0: 2321
+1: 2396
+2: 2361
+3: 2277
+4: 2253
+5: 2243
+6: 2323
+7: 2277
+8: 2337
+9: 2324
+10: 2368
+
+/* OMITTED TO SAVE PAPER */
+
+90: 2333
+91: 2372
+92: 2308
+93: 2318
+94: 2371
+95: 2370
+96: 2299
+97: 2385
+98: 2324
+99: 2388
+100: 2256
+Hash table bucket min-max:
+--------------------------
+
+MAX BUCKET SIZE: 2443
+MIN BUCKET SIZE: 2235
+EMPTY BUCKETS  : 0
+
+aardvark: 2377
+bucolic: 2055
+catastrophic: 1969
+humdrum: 1422
+euphoria: 1721
+ferocious: 1638
+precarious: 840
+talkative: 373
+stupendous: 402
+bias: 2103

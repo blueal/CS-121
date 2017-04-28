@@ -4,7 +4,7 @@
 #ifndef HASH_H
 #define HASH_H
 
-const int HASH_TABLE_SIZE = 10993; // 101, 8017 , 10993 , 49957
+const int HASH_TABLE_SIZE = 49957; // 101, 8017 , 10993 , 49957
 
 typedef struct nList     /*  table entry:  */
 {

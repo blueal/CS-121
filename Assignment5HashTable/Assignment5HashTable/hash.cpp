@@ -149,6 +149,7 @@ void PrintHashTableBucketsMinMax()
 	cout << "--------------------------\n" << endl;
 	int max = INT_MIN;
 	int min = INT_MAX;
+	int empty = 0;
 
 	for (int i = 0; i < HASH_TABLE_SIZE; i++)
 	{
@@ -159,9 +160,12 @@ void PrintHashTableBucketsMinMax()
 		if (bucketSize[i] < min) {
 			min = bucketSize[i];
 		}
-
+		if (bucketSize[i] = 0) {
+			empty++;
+		}
 	}
 
 	cout << "MAX BUCKET SIZE: " << max << endl;
 	cout << "MIN BUCKET SIZE: " << min << endl;
+	cout << "EMPTY BUCKETS  : " << empty << endl;
 }
