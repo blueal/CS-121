@@ -41,7 +41,7 @@ Hash table bucket min-max:
 
 MAX BUCKET SIZE: 15
 MIN BUCKET SIZE: 0
-EMPTY BUCKETS  : 0
+EMPTY BUCKETS  : 448
 
 aardvark: 8
 bucolic: 4

@@ -160,7 +160,7 @@ void PrintHashTableBucketsMinMax()
 		if (bucketSize[i] < min) {
 			min = bucketSize[i];
 		}
-		if (bucketSize[i] = 0) {
+		if (bucketSize[i] == 0) {
 			empty++;
 		}
 	}
